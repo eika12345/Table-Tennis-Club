@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Clissold Table Tennis Club</title>
+  <meta name="description" content="A table tennis club based in Stoke Newington, London" />
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/stylesheet.css" />
+
+</head>
+<body>
+    <!---------------------------------------- navbar ---------------------------------------->
+
+ <header>
+  <div class="logo">
+    <a href="#home">
+      <img src="/images/logo.png" alt="Clissold Table Tennis Club Logo" class="logo-img" />
+    </a>
+  </div>
+
+  <div class="menu-toggle" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#programs">Programs</a>
+    <a href="#events">Events</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+    <!---------------------------------------- hero ---------------------------------------->
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Welcome to Clissold Table Tennis Club</h1>
+      <p>Join a community of passionate players. Train, compete, and grow your game with us.</p>
+      <button class="hero-button" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Get to know us</button>
+    </div>
+  </section>
+
+    <!---------------------------------------- main---------------------------------------->
+
+  <main>
+    <section id="about" class="about">
+  <div class="about-content">
+    <h2>About us</h2>
+    <p>
+      We are a friendly, community-driven club based in the heart of North London.
+      Whether you’re picking up a paddle for the first time or you’ve been playing for years, our doors are open to everyone who loves the game.
+    </p>
+
+    <p>
+      We run regular <strong>coaching sessions, open practice nights,</strong> and <strong>league competitions</strong> for all skill levels.
+      Our qualified coaches are passionate about helping players improve their technique, footwork, and match strategy in a supportive environment.
+    </p>
+
+    <p>
+      Beyond training, the club is all about community — connecting people of all ages through sport, teamwork, and fun.  
+      Come for the table tennis, stay for the camaraderie!
+    </p>
+
+  </div>
+
+  <div class="about-image">
+    <img src="/images/about us image.jpg" alt="Members playing at Clissold Table Tennis Club" />
+  </div>
+</section>
+    <!---------------------------------------- find us---------------------------------------->
+
+<section id="find-us" class="find-us">
+  <div class="find-us-content">
+    <h2>Find Us</h2>
+    <p>
+      Clissold Table Tennis Club is based at <strong>Clissold Leisure Centre</strong> in Stoke Newington, North London.
+      We're easily accessible by public transport and have plenty of local parking nearby.
+    </p>
+
+    <ul class="find-us-details">
+      <li>Clissold Leisure Centre, 63 Clissold Rd, London N16 9EX</li>
+      <li>Mon–Fri: 6 pm – 10 pm &nbsp;|&nbsp; Sat–Sun: 10 am – 5 pm</li>
+      <li>chris.beckley.tt@gmail.com</li>
+      <li>07958 735 935 </li>
+    </ul>
+  </div>
+
+  <div class="find-us-map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1313.7900672852409!2d-0.08609642808114983!3d51.559339006654334!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761c7d71b6102d%3A0x504ce4c881d8f2a6!2sClissold%20Leisure%20Centre!5e1!3m2!1sen!2sus!4v1760723279759!5m2!1sen!2sus" 
+  width="600" 
+  height="450" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>  
+</div>
+</section>
+  </main>
+
+ <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="/images/logo.png" alt="Clissold Table Tennis Club Logo" class="footer-logo-img" />
+      <p>© 2025 Clissold Table Tennis Club</p>
+    </div>
+
+    <nav class="footer-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#programs">Programs</a>
+      <a href="#events">Events</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+const nav = document.getElementById('navLinks');
+
+toggle.addEventListener('click', () => {
+  if (nav.classList.contains('open')) {
+    nav.classList.remove('open');
+    nav.classList.add('closing');
+    setTimeout(() => nav.classList.remove('closing'), 500); // wait for animation to finish
+  } else {
+    nav.classList.add('open');
+  }
+  toggle.classList.toggle('open');
+});
+
+
+  </script>
+</body>
+</html>

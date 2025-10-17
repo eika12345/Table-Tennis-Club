@@ -1,0 +1,24 @@
+:root {
+  /* Colors */
+  --color-primary: #1B5038;
+  --color-primary-dark: #153d2b;
+  --color-text: #111827;
+  --color-background: #1B5038;
+  --color-background-dark: #111827;
+  --color-white: #ffffff;
+
+  /* Fonts */
+  --font-body:  "Coolvetica Rg", sans-serif;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+}
