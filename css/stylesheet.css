@@ -167,7 +167,7 @@ nav a:hover {
 .hero {
   position: relative;
   height: 100vh;
-  background: url(/images/heroimage.jpeg) center/cover no-repeat;
+  background: url(../images/heroimage.jpeg) center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -222,7 +222,7 @@ nav a:hover {
 }
 @media (max-width: 768px) {
   .hero {
-    background: url(/images/heroimagemobile.jpg) center/cover no-repeat;
+    background: url(../images/heroimagemobile.jpg) center/cover no-repeat;
   }
 }
 
